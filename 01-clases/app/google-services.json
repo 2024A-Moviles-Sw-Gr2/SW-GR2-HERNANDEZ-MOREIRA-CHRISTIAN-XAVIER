@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "856841943081",
+    "project_id": "cxhm-2024-sw-gr2",
+    "storage_bucket": "cxhm-2024-sw-gr2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856841943081:android:568f462fade035a6c4c438",
+        "android_client_info": {
+          "package_name": "com.example.a2024aswgr2cxhm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKPsjqrlgIP5g0T6oTf3TY5EsDbO_OwxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
