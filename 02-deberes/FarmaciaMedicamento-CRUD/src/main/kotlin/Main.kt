@@ -107,30 +107,6 @@ fun eliminarFarmacia(farmacias: MutableList<Farmacia>, id: Int) {
     }
 }
 
-fun guardarMedicamentos(medicamentos: List<Medicamento>, archivo: String) {
-    File(archivo).printWriter().use { out ->
-        medicamentos.forEach { medicamento ->
-            out.println("${medicamento.id},${medicamento.nombre},${medicamento.fechaCaducidad},${medicamento.esRecetado},${medicamento.precio}")
-        }
-    }
-}
-
-fun cargarMedicamentos(archivo: String): MutableList<Medicamento> {
-    val medicamentos = mutableListOf<Medicamento>()
-    File(archivo).forEachLine { line ->
-        val datos = line.split(",")
-        val medicamento = Medicamento(
-            datos[0].toInt(),
-            datos[1],
-            LocalDate.parse(datos[2], DateTimeFormatter.ISO_DATE),
-            datos[3].toBoolean(),
-            datos[4].toDouble()
-        )
-        medicamentos.add(medicamento)
-    }
-    return medicamentos
-}
-
 fun guardarFarmacias(farmacias: List<Farmacia>, archivo: String) {
     File(archivo).printWriter().use { out ->
         farmacias.forEach { farmacia ->
