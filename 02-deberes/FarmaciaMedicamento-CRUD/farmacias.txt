@@ -1,0 +1,2 @@
+1,Fybeca,San Carlos,5,true
+    1,Paracetamol,2026-09-09,true,3.4
