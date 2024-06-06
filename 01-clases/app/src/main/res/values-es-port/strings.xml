@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2024ASWGR2CXHM</string>
+    <string name="saludo">Hola Mundo - Portrait</string>
+    <color name="bgcolor">#F0FFFF</color>
+    <color name="textcolor">#8B0000</color>
+</resources>
