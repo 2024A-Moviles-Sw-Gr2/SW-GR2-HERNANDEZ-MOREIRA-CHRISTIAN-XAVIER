@@ -7,7 +7,7 @@ import com.google.android.material.snackbar.Snackbar
 class ACicloVida : AppCompatActivity() {
     var textoGlobal = ""
 
-    fun mostrarSanckBar(texto:String) {
+    fun mostrarSnackBar(texto:String) {
         textoGlobal += texto
         val snack = Snackbar.make(
             findViewById(R.id.cl_ciclo_vida),
@@ -20,36 +20,55 @@ class ACicloVida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aciclo_vida)
-        mostrarSanckBar("OnCreate")
+        mostrarSnackBar("OnCreate")
     }
 
     override fun onStart() {
         super.onStart()
-        mostrarSanckBar("OnStart")
+        mostrarSnackBar("OnStart")
     }
 
     override fun onResume() {
         super.onResume()
-        mostrarSanckBar("OnResume")
+        mostrarSnackBar("OnResume")
     }
 
     override fun onRestart() {
         super.onRestart()
-        mostrarSanckBar("OnRestart")
+        mostrarSnackBar("OnRestart")
     }
 
     override fun onPause() {
         super.onPause()
-        mostrarSanckBar("OnPause")
+        mostrarSnackBar("OnPause")
     }
 
     override fun onStop() {
         super.onStop()
-        mostrarSanckBar("OnStop")
+        mostrarSnackBar("OnStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        mostrarSanckBar("OnDestroy")
+        mostrarSnackBar("OnDestroy")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState
+            .run {
+                //Se guardarán primitivas
+                putString("variableTextoGuardado", textoGlobal)
+            }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        //Recuperar la variable
+        val textoRecuperadoDeVariable: String? = savedInstanceState.getString("variableTextoGuardado")
+        if (textoRecuperadoDeVariable != null) {
+            mostrarSnackBar(textoRecuperadoDeVariable)
+            textoGlobal = textoRecuperadoDeVariable
+        }
     }
 }
