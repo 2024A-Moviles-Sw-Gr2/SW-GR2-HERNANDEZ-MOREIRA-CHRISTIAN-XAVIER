@@ -7,4 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".BListView">
 
+    <ListView
+        android:id="@+id/lv_list_view"
+        android:layout_width="255dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_anadir_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Añadir"
+        app:layout_constraintEnd_toEndOf="@+id/lv_list_view"
+        app:layout_constraintStart_toStartOf="@+id/lv_list_view"
+        app:layout_constraintTop_toBottomOf="@+id/lv_list_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
