@@ -108,7 +108,7 @@ class MainActivity : AppCompatActivity() {
                     "entrenador",
                     BEntrenador(10, "Jose", "Perez")
                 )
-                callbackContenidoIntentImplicito.launch(intentExplicito)
+                callbackContenidoIntentExplicito.launch(intentExplicito)
             }
     }
 
