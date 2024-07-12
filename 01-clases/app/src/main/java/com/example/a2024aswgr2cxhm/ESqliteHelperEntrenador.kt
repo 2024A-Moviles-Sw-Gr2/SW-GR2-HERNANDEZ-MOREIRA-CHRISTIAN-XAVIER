@@ -118,6 +118,6 @@ class ESqliteHelperEntrenador (
         }
         resultadoConsultaLectura.close()
         baseDatosLectura.close()
-        return arregloRespuesta[0]
+        return if(arregloRespuesta.size > 0)arregloRespuesta[0] else null
     }
 }
