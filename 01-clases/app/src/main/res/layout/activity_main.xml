@@ -67,4 +67,15 @@
         tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="335dp" />
 
+    <Button
+        android:id="@+id/btn_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="R. View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sqlite"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sqlite"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_sqlite" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
