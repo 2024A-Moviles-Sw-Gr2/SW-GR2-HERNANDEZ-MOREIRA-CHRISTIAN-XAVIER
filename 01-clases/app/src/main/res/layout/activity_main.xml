@@ -78,4 +78,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_sqlite" />
 
+    <Button
+        android:id="@+id/btn_google_maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G. Maps"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="121dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
