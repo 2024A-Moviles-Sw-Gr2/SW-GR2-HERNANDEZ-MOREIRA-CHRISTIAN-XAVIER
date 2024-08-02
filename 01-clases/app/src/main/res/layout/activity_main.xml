@@ -12,11 +12,11 @@
         android:id="@+id/btn_ir_intent_implicito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
         android:text="I. Implicito"
         app:layout_constraintTop_toBottomOf="@+id/btn_ir_intent_explicito"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp" />
+        tools:layout_editor_absoluteX="161dp" />
 
     <Button
         android:id="@+id/btn_ciclo_vida"
@@ -84,6 +84,14 @@
         android:layout_height="wrap_content"
         android:text="G. Maps"
         tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/btn_intent_firebase_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F. Auth"
+        tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="121dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
