@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".CrearEditarFarmacia">
+
+    <TextView
+        android:id="@+id/Titulo_Crear_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="NUEVA FARMACIA / EDITARLA"
+        android:textSize="22sp"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre_Farmacia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Ingrese el nombre de la farmacia"
+        android:inputType="text"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Crear_Editar"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/direccion_Farmacia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese la dirección de la farmacia"
+        android:inputType="text"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_Farmacia"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/numeroTotal_Medicamentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese el número total de medicamentos"
+        android:inputType="number"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccion_Farmacia"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/abierta24Horas_Farmacia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="¿Abierta 24 horas? (true/false)"
+        android:inputType="text"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numeroTotal_Medicamentos"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/guardar_Farmacia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Guardar"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abierta24Horas_Farmacia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

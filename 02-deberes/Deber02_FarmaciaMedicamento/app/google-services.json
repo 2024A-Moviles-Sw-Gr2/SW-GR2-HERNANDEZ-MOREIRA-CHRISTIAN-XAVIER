@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "43575643112",
+    "project_id": "deber02-farmaciamedicamento",
+    "storage_bucket": "deber02-farmaciamedicamento.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43575643112:android:46f785f47d4041e0ab725d",
+        "android_client_info": {
+          "package_name": "com.example.deber02_farmaciamedicamento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXYXz4CYpDD1RRpbnB_cRDNKCo5ISp3s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
