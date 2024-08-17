@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#FFF9C4</color> <!-- Amarillo claro -->
+    <color name="primaryTextColor">#3E2723</color> <!-- Café oscuro -->
+    <color name="hintColor">#A1887F</color> <!-- Café claro -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- Blanco -->
+    <color name="buttonColor">#FBC02D</color> <!-- Amarillo -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

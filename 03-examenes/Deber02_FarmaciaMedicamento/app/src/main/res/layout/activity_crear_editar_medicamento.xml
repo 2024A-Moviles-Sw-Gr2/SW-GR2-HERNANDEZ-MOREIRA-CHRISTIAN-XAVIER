@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".CrearEditarMedicamento">
+
+    <TextView
+        android:id="@+id/titulo_Crear_Editar_Medicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Nuevo medicamento / Editarlo"
+        android:textSize="22sp"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre_Medicamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Ingrese el nombre del medicamento"
+        android:inputType="text"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_Crear_Editar_Medicamento"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/esRecetado_Medicamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="¿Es recetado? (true/false)"
+        android:inputType="text"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_Medicamento"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/precio_Medicamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese el precio"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esRecetado_Medicamento"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <EditText
+        android:id="@+id/id_Farmacia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:hint="ID de la farmacia"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio_Medicamento"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/edit_text_background" />
+
+    <Button
+        android:id="@+id/guardar_Medicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Guardar"
+        android:textColor="@color/buttonTextColor"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_Farmacia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
