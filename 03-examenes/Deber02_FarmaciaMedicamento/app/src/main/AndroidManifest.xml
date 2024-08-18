@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deber02_FarmaciaMedicamento"
         tools:targetApi="31">
-
+        <activity
+            android:name=".GoogleMapsActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -29,9 +34,9 @@
             android:value="AIzaSyCZnHvMtkadW64vde1xUHNfG2xWw6awITs" />
 
         <activity
-            android:name=".googleMaps"
+            android:name=".GoogleMapsInicio"
             android:exported="false"
-            android:label="@string/title_activity_google_maps" />
+            android:label="@string/title_activity_google_maps_inicio" />
         <activity
             android:name=".ListaMedicamentos"
             android:exported="false" />

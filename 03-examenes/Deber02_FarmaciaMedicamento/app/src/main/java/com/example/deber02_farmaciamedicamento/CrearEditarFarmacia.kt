@@ -59,9 +59,9 @@ class CrearEditarFarmacia : AppCompatActivity() {
         direccionFarmacia = findViewById(R.id.direccion_Farmacia)
         numeroTotalMedicamentos = findViewById(R.id.numeroTotal_Medicamentos)
         abierta24Horas = findViewById(R.id.abierta24Horas_Farmacia)
+        guardarFarmacia = findViewById(R.id.guardar_Farmacia)
         latitudFarmacia = findViewById(R.id.latitud_Farmacia)
         longitudFarmacia = findViewById(R.id.longitud_Farmacia)
-        guardarFarmacia = findViewById(R.id.guardar_Farmacia)
     }
 
     private fun populateFields(farmacia: Farmacia) {

@@ -1,6 +1,5 @@
 package com.example.deber02_farmaciamedicamento
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private var adapter: ArrayAdapter<Farmacia>? = null
     private var posicion = -1
 
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,10 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         val botonMapa = findViewById<Button>(R.id.btn_ir_mapa)
         botonMapa.setOnClickListener {
-            goToActivity(googleMaps::class.java)
+            goToActivity(GoogleMapsActivity::class.java)
         }
 
-            registerForContextMenu(listaFarmacias)
+        registerForContextMenu(listaFarmacias)
     }
 
     override fun onCreateContextMenu(

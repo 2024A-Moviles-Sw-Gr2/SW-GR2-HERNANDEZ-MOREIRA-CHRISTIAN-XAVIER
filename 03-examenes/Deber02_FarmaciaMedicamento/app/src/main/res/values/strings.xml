@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Deber02_FarmaciaMedicamento</string>
-    <string name="title_activity_google_maps">googleMaps</string>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
 </resources>

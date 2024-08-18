@@ -59,8 +59,8 @@ class SqliteHelper(
                         queryResult.getString(2) ?: "", // direccionFarmacia
                         queryResult.getInt(3), // numeroTotalMedicamentos
                         queryResult.getInt(4) == 1, // abierta24Horas
-                        queryResult.getDouble(5), // latitud
-                        queryResult.getDouble(6) //longitud
+                        queryResult.getDouble(5), // latitudFarmacia
+                        queryResult.getDouble(6) // longitudFarmacia
                     )
                 )
             } while (queryResult.moveToNext())
